@@ -30,6 +30,10 @@ modules:
       memory: 512M
    build-parameters:
       builder: grunt
+   properties:
+      CALM_SERVICE_ID: 3e6bf810-a891-42b4-83a5-907501003c6a
+      CALM_MIN_LEVEL: info
+      CALM_TAG: sample-shop
    requires:
     - name: uaa_Demo_MTA_Project
     - name: dest_Demo_MTA_Project
