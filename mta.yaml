@@ -9,6 +9,7 @@ parameters:
   app_name: shoppr
 #  deployed_domain: cfapps.eu10.hana.ondemand.com
   ext_redirecturl:
+    - 'https://c09726f8trial-dev-sample-shop.cfapps.us10-001.hana.ondemand.com/login/callback'
     - 'https://c9d39d37trial-dev-sample-shop.cfapps.us10-001.hana.ondemand.com/login/callback'
     - 'https://1e3f00ebtrial-dev-sample-shop.cfapps.us10-001.hana.ondemand.com/login/callback'
     - 'https://5dd06586trial-dev-sample-shop.cfapps.ap21.hana.ondemand.com/login/callback'
