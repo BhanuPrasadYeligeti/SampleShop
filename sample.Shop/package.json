@@ -9,13 +9,18 @@
   "dependencies": {
     "@sap/approuter": "^23.3.0",
     "body-parser": "1.19.1",
-    "@sap/xssec": "^4.12.2"
+    "@sap/xssec": "^4.12.2",
+    "@opentelemetry/api": "1.9.0",
+    "@opentelemetry/api-logs": "0.223.0",
+    "@opentelemetry/sdk-logs": "0.223.0",
+    "@opentelemetry/otlp-transformer": "0.223.0",
+    "@opentelemetry/resources": "2.12.0"
   },
   "scripts": {
-    "start": "node node_modules/@sap/approuter/approuter.js",
+    "start": "node -r ./calm-otel.js node_modules/@sap/approuter/approuter.js",
     "test": "grunt unit_and_integration_tests"
   },
   "engines": {
-    "node": "^20.0.0"
+    "node": "^22.0.0"
   }
 }
