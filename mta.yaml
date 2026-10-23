@@ -30,6 +30,11 @@ modules:
       memory: 512M
    build-parameters:
       builder: grunt
+   properties:
+      CALM_SERVICE_ID: 3e6bf810-a891-42b4-83a5-907501003c6a   # service ID from Cloud ALM Landscape Management
+      CALM_DESTINATION: CALM_datacollector                     # BTP destination pointing to Cloud ALM
+      CALM_MIN_LEVEL: info                                     # debug | info | warning | error
+      CALM_TAG: sample-shop
    requires:
     - name: uaa_Demo_MTA_Project
     - name: dest_Demo_MTA_Project
