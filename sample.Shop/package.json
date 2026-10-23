@@ -16,6 +16,6 @@
     "test": "grunt unit_and_integration_tests"
   },
   "engines": {
-    "node": "^22.0.0"
+    "node": "^20.0.0"
   }
 }
