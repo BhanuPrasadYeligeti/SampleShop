@@ -31,7 +31,7 @@ modules:
    build-parameters:
       builder: grunt
    properties:
-      CALM_SERVICE_ID: 32f21bdd-36bc-44b7-a1de-c95872500295   # Cloud ALM service c09726f8trial (SAP BTP, Cloud Foundry environment)
+      CALM_SERVICE_ID: 'BTP_CF_RUNTIME'   # Cloud ALM service c09726f8trial (SAP BTP, Cloud Foundry environment)
       CALM_DESTINATION: CALM_datacollector                     # BTP destination pointing to Cloud ALM
       CALM_MIN_LEVEL: info                                     # debug | info | warning | error
       CALM_TAG: sample-shop
