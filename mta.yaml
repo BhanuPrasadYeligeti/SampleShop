@@ -31,10 +31,8 @@ modules:
    build-parameters:
       builder: grunt
    properties:
-      CALM_SERVICE_ID: 65bad13e-fada-4b7b-b4d5-69a55454232a   # Cloud ALM service c09726f8trial (SAP BTP, Cloud Foundry environment)
-      CALM_DESTINATION: CALM_datacollector                     # BTP destination pointing to Cloud ALM
-      CALM_MIN_LEVEL: info                                     # debug | info | warning | error
-      CALM_TAG: sample-shop
+      SAP_CALM_SERVICE_NAME: sample.Shop          # app name shown in SAP Cloud ALM
+      SAP_CALM_SERVICE_TYPE: SAP_CP_CF            # SAP BTP, Cloud Foundry environment
    requires:
     - name: uaa_Demo_MTA_Project
     - name: dest_Demo_MTA_Project
