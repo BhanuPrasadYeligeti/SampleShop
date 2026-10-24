@@ -21,6 +21,7 @@ parameters:
     - 'https://3b35b5cetrial-dev-sample-shop.cfapps.ap21.hana.ondemand.com/login/callback'
     - 'https://96761135trial-dev-sample-shop.cfapps.ap21.hana.ondemand.com/login/callback'
     - 'https://9ca1bc1btrial-dev-sample-shop.cfapps.ap21.hana.ondemand.com/login/callback'
+    - 'https://eaf60afetrial-dev-sample-shop.cfapps.ap21.hana.ondemand.com/login/callback'
 modules:
  - name: sample.Shop
    type: html5
