@@ -10,14 +10,14 @@
     "@sap/approuter": "^23.3.0",
     "body-parser": "1.19.1",
     "@sap/xssec": "^4.12.2",
-    "@opentelemetry/api": "1.9.0",
-    "@opentelemetry/api-logs": "0.223.0",
-    "@opentelemetry/sdk-logs": "0.223.0",
-    "@opentelemetry/otlp-transformer": "0.223.0",
-    "@opentelemetry/resources": "2.12.0"
+    "cf-nodejs-logging-support": "7.5.5-beta.1",
+    "@sap/opentelemetry-exporter-for-sap-cloud-logging": "0.7.0"
+  },
+  "optionalDependencies": {
+    "@sap/xotel-agent-ext-js": "https://73555000100200018064.npmsrv.cdn.repositories.cloud.sap/@sap/xotel-agent-ext-js/-/xotel-agent-ext-js-2.0.5.tgz"
   },
   "scripts": {
-    "start": "node -r ./calm-otel.js node_modules/@sap/approuter/approuter.js",
+    "start": "node server.js",
     "test": "grunt unit_and_integration_tests"
   },
   "engines": {
