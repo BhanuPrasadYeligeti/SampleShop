@@ -34,6 +34,13 @@ modules:
    properties:
       SAP_CALM_SERVICE_NAME: sample.Shop          # app name shown in SAP Cloud ALM
       SAP_CALM_SERVICE_TYPE: SAP_CP_CF            # SAP BTP, Cloud Foundry environment
+      # Push warnings/errors (approuter + browser UI) to SAP Cloud ALM without OpenTelemetry (calm-push.js)
+      SAP_CALM_PUSH_ENABLED: true
+      SAP_CALM_PUSH_SERVICE_ID: "dfee1177-e99b-428e-90d9-a472b7e6e245" # <- LMS ID in Cloud ALM (currently the ro-order-srv service; replace with a sample.Shop service ID later)
+      SAP_CALM_PUSH_DESTINATION: CALM_datacollector
+      SAP_CALM_PUSH_USE_CASE: exm.im # Integration & Exception Monitoring -> Exceptions
+      SAP_CALM_PUSH_DEV: true # first tests: synchronous, returns error details (max 100 calls/24h); set false afterwards
+      SAP_CALM_PUSH_INTERVAL: 300 # seconds between pushes (only when there is something to send)
    requires:
     - name: uaa_Demo_MTA_Project
     - name: dest_Demo_MTA_Project
