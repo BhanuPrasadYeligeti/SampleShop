@@ -32,6 +32,8 @@
 					<OverflowToolbar id="tableToolbar">
 						<Title id="catalogTitle" text="{productListView>/catalogTitle}"/>
 						<ToolbarSpacer id="toolbarSpacer"/>
+						<!-- SAP Cloud ALM demo: writes a UI warning and throws a TypeError (null pointer) in the browser -->
+						<Button id="simulateUiErrorButton" text="Simulate UI Error" icon="sap-icon://error" type="Reject" press="onSimulateUiErrorPressed"/>
 						<Button id="addItemsToCartButton" text="{productListView>/addItemsToCartText}" press="onAddItemsToCartPressed"
 							enabled="{productListView>/hasSelectedItems}" type="Transparent"/>
 						<Button id="openItemsButton" text="{productListView>/openLinkText}" press="onOpenItemsPressed" enabled="{productListView>/hasSelectedItems}"
