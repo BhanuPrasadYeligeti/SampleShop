@@ -162,6 +162,15 @@ sap.ui.define([
 			});
 		},
 
+		// SAP Cloud ALM demo: writes one UI warning, then throws a TypeError (null pointer) in the browser.
+		// webapp/calm-ui-logger.js catches both and sends them via the approuter (/calm/ui-log) to SAP Cloud ALM.
+		onSimulateUiErrorPressed: function() {
+			var Log = sap.ui.require("sap/base/Log");
+			var oCart = null; // real-world bug: the shopping cart has not been loaded yet
+			Log.warning("Shopping cart not loaded yet - reading cart quantity anyway", "", "nw.epm.refapps.shop.S2_ProductList");
+			return oCart.TotalQuantity; // TypeError: Cannot read properties of null (reading "TotalQuantity")
+		},
+
 		onGroupPressed: function() {
 			this._oGrouping.openGroupingDialog();
 		},
