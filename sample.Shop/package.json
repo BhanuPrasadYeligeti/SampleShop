@@ -7,17 +7,16 @@
     "@sap/grunt-sapui5-bestpractice-test": "2.0.2"
   },
   "dependencies": {
-    "@sap/approuter": "6.8.0",
+    "@sap/approuter": "^23.3.0",
     "body-parser": "1.19.1",
-    "@sap/xssec": "3.5.0"
-    
+    "@sap/xssec": "^4.12.2",
+    "cf-nodejs-logging-support": "7.5.5-beta.1"
   },
   "scripts": {
-    "start": "node node_modules/@sap/approuter/approuter.js",
-    "test": "grunt unit_and_integration_tests",
-    "start2": "npm start2"
+    "start": "node server.js",
+    "test": "grunt unit_and_integration_tests"
   },
   "engines": {
-    "node":"^20.0.0"
+    "node": "^22.0.0"
   }
 }
